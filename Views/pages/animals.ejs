@@ -1,0 +1,13 @@
+<%- include('../partials/header') %>
+<%- include('../partials/head') %>
+<h1>Animals</h1>
+<% animals.forEach((animal) => { %>
+	<p><b>Name:</b> <%= animal.name %>   <b>Breed:</b> <%= animal.breed %>      <b>Birth Year:</b> <%= animal.birthYear %></p>
+		
+	<% if (animal.hasFleas==true){ %>
+		<p>Dirty</p>
+	 <% } else { %>
+	   <p>Clean</p>
+	 <% } %>
+<% }) %>
+<%- include('../partials/footer') %>
