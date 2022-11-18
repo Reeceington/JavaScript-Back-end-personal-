@@ -1,0 +1,23 @@
+<%- include('../partials/head') %>
+
+<%- include('../partials/header') %>
+
+
+
+<div class="container">
+            <h1>Countries</h1>
+            <div class="col-4">
+            <div class="card">
+            <div class="card-body">
+            <h5 class="card-title"><%= country.country %> <%= country.Country_ID %></h5>
+            <a href="/countries/"><button type="button" class="btn btn-outline-secondary" id="back">back</button></a>
+            
+        <button type='submit' class="btn btn-outline-secondary">Delete Country</button>
+        </div>
+        </div>
+     </div>
+</div>
+
+
+
+<%- include('../partials/footer') %>

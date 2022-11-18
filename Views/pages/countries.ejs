@@ -1,0 +1,23 @@
+<%- include('../partials/head') %>
+<%- include('../partials/header') %>
+<div class="container">
+        <h1>Countries</h1>  
+        <% countriesArray.forEach((country)=> { %>
+            <div class="col-4">
+                <div class="card">
+                   <div class="card-body">
+                    <h5 class="card-title"><%= country.country %></h5>
+                    <a href="/countries/<%= country.country_id %>"><button type="button" class="btn btn-secondary">edit</button></a>
+                    <a href="/countries/"><button type="button" class="btn btn-outline-secondary" id="back">back</button></a>
+                
+                </div>
+             </div>
+         </div>
+    <% }) %> 
+</div>
+<form action='http://localhost:3000/countries/add' method='post'>
+  <b>Name:</b> <input type='text' name='country'/>
+    <button type='submit' class="btn btn-secondary" >Add Country</button>
+
+<%- include('../partials/footer') %>
+
