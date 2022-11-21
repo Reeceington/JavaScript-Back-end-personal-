@@ -27,8 +27,8 @@ const getCountryById = (request, response, next) => {
             }
  
             console.log(result);
-            response.render("../views/pages/countries", {
-                countriesArray: result,
+            response.render("../views/pages/country", {
+                country: result[0],
                 title: "Country"
             });
         });
@@ -61,8 +61,8 @@ const editCountry = (request, response, next) => {
 const deleteCountry = (request, response, next) => {
     const id = request.params.id;
 
-    pool.query(`DELETE FROM WHERE country_id = ?`,
-      request.body, (error, result) => {
+    pool.query(`DELETE FROM country WHERE country_id = ?`,
+     id, (error, result) => {
         if (error){
             throw error;
         }

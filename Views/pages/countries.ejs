@@ -4,12 +4,15 @@
         <h1>Countries</h1>  
         <% countriesArray.forEach((country)=> { %>
             <div class="col-4">
-                <div class="card">
+                <div class="coloum">
                    <div class="card-body">
                     <h5 class="card-title"><%= country.country %></h5>
+                    <em>ID: <%= country.country_id %></em>
+<br>
+                    <em>no. Cities: </em>
+<br>
                     <a href="/countries/<%= country.country_id %>"><button type="button" class="btn btn-secondary">edit</button></a>
-                    <a href="/countries/"><button type="button" class="btn btn-outline-secondary" id="back">back</button></a>
-                
+                     
                 </div>
              </div>
          </div>
