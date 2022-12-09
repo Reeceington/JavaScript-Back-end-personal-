@@ -5,7 +5,7 @@ const config = {
     host: "localhost",
     user: "root",
     password: "password",
-    database: "mydb_reece"
+    database: "esportsTable"
 };
 
 // Create a mySql connection pool

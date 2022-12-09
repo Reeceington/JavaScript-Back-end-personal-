@@ -1,0 +1,8 @@
+<%- include('../partials/head') %>
+<%- include('../partials/header') %>
+<form action='http://localhost:1066/players/add' method='post'>     <!--form to add data back to SQL-->
+    <b>Name:</b> <input type='text' name='name'/>                   <!--Change B tags and "Name=..."-->
+    <b>Duration:</b> <input type='text' name='duration'/>           <!--Change B tags and "Name=..."-->
+    <b>Team Size:</b> <input type='text' name='team_size'/>         <!--Change B tags and "Name=..."-->
+      <button type='submit' class="btn btn-secondary" >Add Player</button>
+  </form>
